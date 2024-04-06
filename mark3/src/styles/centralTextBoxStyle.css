@@ -1,0 +1,22 @@
+/* Styles for the central text box */
+.centralTextBox {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    max-width: 70%;
+    margin: auto;
+    /* Adjust width to account for padding */
+    height: 150px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    /* position: absolute;
+    /* Position the text box absolutely within .mainArea */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100; */
+
+    /* To keep it above other content */
+    /* Ensure it's above other content */
+}

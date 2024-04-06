@@ -1,0 +1,74 @@
+/* Styles for the meta and mesa containers */
+.metaMesaContainer {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 70%; */
+    margin: auto;
+    margin-top: 10px;
+    /* Or adjust accordingly */
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+    max-height: 0;
+    /* Start with max-height 0 to collapse the container */
+    opacity: 0;
+    /* Start with opacity 0 to make container invisible */
+
+}
+
+.metaMesaContainer.active {
+    max-height: 500px;
+    /* Adjust as necessary to fit content */
+    opacity: 1;
+    /* Fade in to full opacity */
+}
+
+.suggestion {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    /* Shows a pointer cursor on hover */
+
+}
+
+.suggestion.accepted {
+    border-color: green;
+    background-color: #e0ffe0;
+    /* Light green background or any color of your choice */
+
+}
+
+.suggestion button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.loading {
+    animation: fadeIn 1s infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}

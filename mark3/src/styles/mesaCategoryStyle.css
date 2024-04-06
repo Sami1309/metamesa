@@ -1,0 +1,22 @@
+.mesaCategory {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mainCategory {
+    font-weight: bold;
+}
+
+.subCategory {
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subCategory:hover,
+.subCategory.selected {
+    background-color: #f0f0f0;
+}

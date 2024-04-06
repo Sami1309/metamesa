@@ -1,0 +1,13 @@
+/* Styles for the top bar */
+.topBar {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    /* Ensure it stays above other content */
+}

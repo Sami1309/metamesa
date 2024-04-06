@@ -1,0 +1,29 @@
+/* Styles for the sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    overflow: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.fileItem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    transition: background-color 0.2s;
+}
+
+.fileItem.selected {
+    background-color: #e0e0e0;
+    /* Change as per your design */
+}
+
+.fileItem img {
+    margin-right: 8px;
+    width: 24px;
+    /* Adjust as needed */
+}
